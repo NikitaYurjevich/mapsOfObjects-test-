@@ -1,0 +1,77 @@
+.cities-list{
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    height: 600px;
+
+    li{
+        $officeNameColor : rgb(30,53,93);
+        $managerNameColor: rgb(33,33,33);
+        $managerMailColor: rgb(90,193,236);
+
+        border: 1px solid rgb(237,237,237);
+        padding: 25px 0 25px 25px;
+        font-size: 22px;
+
+        .open-spoiler{
+            color: rgb(0,50,94);
+        }
+        .spoiler-title{
+            display: flex;
+            justify-content: space-between;
+
+            &::after{
+                content:url('../img/Фигура\ 5.png');
+
+                width: 15px;
+                height: 15px;
+
+                position:relative;
+                right: 40px;
+                }
+        }
+
+        .spoiler-title-show{
+            color: #FF9E00;
+        
+            &::after{
+                transform: rotate(180deg);
+                top: 15px;
+            }
+        }
+
+        .spoiler-container{
+            font-size: 16px;
+        }
+        
+        .office-name{
+            color: $officeNameColor;
+        }
+
+        .manager-name{
+            color: $managerNameColor;
+        }
+
+        .phone-container{
+            color: black;
+
+            span{
+                margin-right: 15px;
+            }
+        }
+
+        .manager-mail{
+            color: $managerMailColor;
+        }
+    }
+}
+
+.spoiler-container{
+    display: none;
+
+}
+
+.spoiler-show{
+    display: block;
+    margin-bottom: 45px;
+}

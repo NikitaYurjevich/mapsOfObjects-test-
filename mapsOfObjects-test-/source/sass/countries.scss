@@ -1,0 +1,29 @@
+.information-countries{
+    margin-bottom: 15px;
+    height: 50px;
+    ul{
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    li{
+        $ORANGE: #FF9E00;
+        $GRAY: #929292;
+        flex-grow: 2;
+        background-color: rgb(255,255,255);
+        border: 1px solid rgb(146,146,146);    
+        padding: 15px 0;
+        text-align: center;
+        color: $GRAY;    
+
+        &:hover{
+            background-color: $ORANGE;
+            color: white;
+        }
+    }
+}

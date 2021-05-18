@@ -1,0 +1,25 @@
+.content-box{
+    display: flex;
+    align-items: 1;
+    padding: 0;
+}
+
+.information-countries ul{
+    height: 100px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.information-countries li{
+    flex-grow: 2;
+}
+
+.information{
+    width:25%;
+    height: 700px;
+}
+
+.map-box{
+    width: 75%;
+    height: 700px;
+}
